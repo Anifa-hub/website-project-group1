@@ -12,10 +12,9 @@
         fetch(url)
         .then((response) => response.text())
         .then((html) => {
-            document.getElementById(id).innerHTML = html;
-            if(id === 'header') {
+            
                  document.getElementById(id).innerHTML = html;
-                    if (id === "header") {
+                    if (id === "navbar") {
                         let toggleBtn = document.getElementById("img");
                         toggleBtn.addEventListener("click", function () {
                             document.getElementById("menu").classList.toggle("hidden");
@@ -23,13 +22,13 @@
                             document.getElementById("close-icon").classList.toggle("hidden");
                         })
                     }
-            }
+            
         });
 
     }
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
+        loadComponents('navbar', 'src/sections/navbar.html');
         loadComponents('hero', 'src/sections/hero.html');
         loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', 'src/sections/footer.html');
@@ -37,8 +36,8 @@
 </script>
 <body>
     <div id="header" class=""></div>
-    <!-- <div id="hero"></div>
-    <div id="contact"></div>
-    <div id="footer"></div> -->
+     <div id="navbar"></div>
+    <!-- <div id="contact"></div>
+    <div id="footer"></div>  -->
 </body>
 </html>

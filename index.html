@@ -23,11 +23,13 @@
                         })
                     }
             
-        });
+            })
+        };
 
-    }
+    
 
     window.onload = () => {
+        loadComponents('header', 'src/sections/header.html');
         loadComponents('navbar', 'src/sections/navbar.html');
         loadComponents('hero', 'src/sections/hero.html');
         loadComponents('contact', 'src/sections/contact.html');
@@ -35,9 +37,10 @@
     }
 </script>
 <body>
-    <div id="header" class=""></div>
+    <div id="header"></div>
      <div id="navbar"></div>
-    <!-- <div id="contact"></div>
+    <!-- <div id="hero"></div>
+    <div id="contact"></div>
     <div id="footer"></div>  -->
 </body>
 </html>

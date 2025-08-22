@@ -6,8 +6,8 @@ module.exports = {
       fontFamily:{
         outfit:['Outfit', 'sans-serif'],
       },
-      fontColor:{
-        
+      colors:{
+        'primary': '#EFECEA',
       }
     },
   },

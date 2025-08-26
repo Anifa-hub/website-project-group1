@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
     <title>Website project template</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<style>
-    html{
-        scroll-behavior: smooth;
-    }
-</style>
 <script>
    const loadComponents = (id, url) =>  {
         fetch(url)
@@ -26,27 +21,18 @@
                             document.getElementById("close-icon").classList.toggle("hidden");
                         })
                     }
-            
             })
         };
-
-    
-
     window.onload = () => {
         loadComponents('navbar', 'src/sections/navbar.html');
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        // loadComponents('contact', 'src/sections/contact.html');
+        loadComponents('data-privacy', 'src/sections/data-privacy.html');
         loadComponents('footer', 'src/sections/footer.html');
-      
     }
 </script>
+
 <body>
-     <div id="navbar" class=""></div>
-    <div id="header" class=""></div>
-    
-    <div id="hero"></div>
-     <!-- <div id="contact"></div>  -->
-    <div id="footer"></div>  
+     <div id="navbar" class="text-green-900"></div>
+    <div id="data-privacy" ></div>
+    <div id="footer" class="lg:pt-[-3733px] md:mt-[-4197px] mt-[-2523px] bg-[#F5F1E9]"></div>  
 </body>
 </html>

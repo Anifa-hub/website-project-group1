@@ -3,11 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily:{
-        outfit:['Outfit', 'sans-serif'],
+      fontFamily: {
+        outfit: ["Outfit","sans-serif"]
+
       },
-      colors:{
-        'primary': '#EFECEA',
+      colors: {
+        'setYellow': '#FFE800',
       }
     },
   },

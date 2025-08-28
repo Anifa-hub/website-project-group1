@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         outfit: ["Outfit","sans-serif"]
 
+      },
+      colors: {
+        'setYellow': '#FFE800',
       }
     },
   },
